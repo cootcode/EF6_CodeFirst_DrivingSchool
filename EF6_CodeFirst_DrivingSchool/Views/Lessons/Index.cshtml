@@ -1,0 +1,75 @@
+﻿@model IEnumerable<EF6_CodeFirst_DrivingSchool.Models.Lesson>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ref_Lesson_Status.LessonStatusDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Staff.Nickname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vehicle.VehicleDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LessonDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LessonTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherLessonDetails)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ref_Lesson_Status.LessonStatusDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Staff.Nickname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vehicle.VehicleDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LessonDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LessonTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherLessonDetails)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LessonId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LessonId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LessonId })
+        </td>
+    </tr>
+}
+
+</table>

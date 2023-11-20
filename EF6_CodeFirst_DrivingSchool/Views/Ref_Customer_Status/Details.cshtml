@@ -1,0 +1,26 @@
+﻿@model EF6_CodeFirst_DrivingSchool.Models.Ref_Customer_Status
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ref_Customer_Status</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerStatusDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerStatusDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerStatusCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

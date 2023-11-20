@@ -1,0 +1,26 @@
+﻿@model EF6_CodeFirst_DrivingSchool.Models.Ref_Payment_Method
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ref_Payment_Method</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentMethodDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentMethodDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PaymentMethodCode }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,106 @@
+﻿@model EF6_CodeFirst_DrivingSchool.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.StreetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.StreetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ref_Customer_Status.CustomerStatusDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ref_Customer_Status.CustomerStatusDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateBecameCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateBecameCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountOutstanding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountOutstanding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellMobilePhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellMobilePhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherCustomerDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherCustomerDetails)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

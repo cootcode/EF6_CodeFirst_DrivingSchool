@@ -1,0 +1,82 @@
+﻿@model EF6_CodeFirst_DrivingSchool.Models.Lesson
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lesson</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ref_Lesson_Status.LessonStatusDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ref_Lesson_Status.LessonStatusDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.Nickname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.Nickname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle.VehicleDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle.VehicleDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LessonDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LessonDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LessonTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LessonTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherLessonDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherLessonDetails)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LessonId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
