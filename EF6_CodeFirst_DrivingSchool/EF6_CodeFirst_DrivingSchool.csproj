@@ -131,6 +131,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Customer_Payment.cs" />
+    <Compile Include="Models\DrivingSchoolDbContext.cs" />
+    <Compile Include="Models\DrivingSchoolDbInitializer.cs" />
+    <Compile Include="Models\Lesson.cs" />
+    <Compile Include="Models\Ref_Customer_Status.cs" />
+    <Compile Include="Models\Ref_Lesson_Status.cs" />
+    <Compile Include="Models\Ref_Payment_Method.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,7 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
